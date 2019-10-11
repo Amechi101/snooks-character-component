@@ -1,0 +1,88 @@
+.row {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.col {
+    width: calc(100% / 2);
+    height: 100vh;
+    flex-grow: 1;
+}
+
+/*.parts {
+    position: absolute;
+    background-size: 40%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 100%;
+    z-index: 1;
+    transition: background 500ms ease-in-out;
+}
+*/
+
+.appearance {
+    width: 50px;
+    border-radius: 50%;
+    height: 50px;
+    cursor: pointer;
+}
+
+#faceBody .appearance[data-color='a'] {
+    background-color: red;
+}
+
+#faceBody .appearance[data-color='b'] {
+    background-color: blue;
+}
+
+#faceBody .appearance[data-color='c'] {
+    background-color: #922222;
+}
+
+#faceBody .appearance[data-color='d'] {
+    background-color: #421332;
+}
+
+#faceBody .appearance[data-color='e'] {
+    background-color: #532321;
+}
+
+#faceBody .appearance[data-color='f'] {
+    background-color: #753322;
+}
+
+
+
+#hairBack,
+#headwearHairBack{
+    z-index: -1;
+}
+
+
+#body,
+#pants {
+    z-index: 0
+}
+
+#shoes {
+    z-index: 14
+}
+
+
+.btn-wrapper {/* width: 30%; */}
+
+.btn {
+    height:48px;
+    min-width:148px;
+    font-size:0.6rem;
+    font-weight:400;
+    text-align:center;
+    background-color:transparent;
+    text-transform:uppercase;
+    letter-spacing: 0.17em;
+        line-height: 47px;
+    padding: 0 24px;
+        white-space: nowrap;
+    cursor: pointer;
+}

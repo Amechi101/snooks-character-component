@@ -1,0 +1,25 @@
+All versions
+
+- For this page (https://xd.adobe.com/view/0949f9a9-56ce-460d-6765-a00f8140be58-7f78/screen/76947829-bf9b-4558-a85e-7469bb0e0b23/Web-1920-25?fullscreen) how can we show the action of where a suer can edit the text?
+
+- For the preview page i am not usre I understand the sequence of apperance here, what is the left side suppose to be showing and the right side? (https://xd.adobe.com/view/0949f9a9-56ce-460d-6765-a00f8140be58-7f78/screen/614ad175-9b06-4f08-8f74-1012e8cb6c13/Web-1920-31?fullscreen)
+
+- I think we can add the "Add Book to bag button" (https://xd.adobe.com/view/0949f9a9-56ce-460d-6765-a00f8140be58-7f78/screen/bfdb327d-0775-4306-84fe-2c7d77c0f7f5/Web-1920-32?fullscreen) on the preview book page
+
+- I think it'll either use "Create StoryBook" or "Create Book" than "Create Custom Storybook" to shorten the word
+
+- For the homepage for the "get started now" maybe we should use a button for a better call to action then the word with the underline? 
+
+- For tablet or mobile I can't scroll down to the the footer to see how it looks in terms of the design
+
+- For the contact page it will just be email address no address, so how do you envision that will look?
+
+
+Desktop
+
+- For the Bag button maybe we can just use iconography, the one you have for tablet and mobile? Also do you have a iconography view where the bag is active with items inside.
+
+
+Additional Comments
+
+- Is it possible to see some static designs of the pages outside adobe XD?

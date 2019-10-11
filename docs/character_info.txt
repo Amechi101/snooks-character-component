@@ -1,0 +1,63 @@
+14. (22 Character activity/job settings templates)*
+	Dancing
+	Cooking
+	Singing
+	Aircraft Pilot
+	Businessman/Businesswoman
+	Firefighter
+	Police Officer
+	Fishing
+	Gardening/Love of Plants
+	Love Animals
+	Doctor/Hospital Worker
+	Teacher
+	Playing Basketball
+	Playing Baseball
+	Playing Soccer
+	Playing Golf
+	Playing Piano
+	Playing Guitar
+	Playing Trumpet
+	Loves Fashion
+	Painter/Painting
+	Dentist
+
+
+Sex
+	- Male
+	- Female
+
+(Dependent) Components
+	Skin = (15 skin tones)
+
+	Face Group
+		- (18 Jaw shapes) * (Skin) = (270 PNGS)
+		- (7 CheekBone features) * (Skin) = 
+		- (5 Facial Expressions)
+			Laughing
+			Smiling
+			Frowning
+			No expression
+			Mad
+
+	Body Group
+		10. (3 Female Body Types) * (Skin) = 
+		11. (3 Male Body Types) * (Skin) = 
+
+
+(Independent) Components	
+	Head Group
+		(50 Hairstyles)
+		(40 Headwear)
+
+	Face Group	
+		(30 Eyebrow shapes)
+		(10 eye glasses)
+		(4 eyelash shapes)
+		(24 Eye shapes)
+		(7 lips shapes)
+		(10 Noses)
+
+	Body Group
+		(7 Male Outfits)
+		(7 Female Outfits)
