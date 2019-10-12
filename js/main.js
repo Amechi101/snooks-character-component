@@ -1,5 +1,8 @@
 "use strict";
 
+// @TODO: 
+// 
+
 
 const characterComponent = (function CharacterComponent() {
 	const rootDir = '../img/character_assets';
@@ -14,23 +17,32 @@ const characterComponent = (function CharacterComponent() {
 	const characterCanvasHeight = characterCanvas.height = characterCanvas.offsetHeight;
 
 	const characterState = {};
+	const characterAssets = [
+		'body', 
+		'face', 
+		'eyes',
+		'glasses',
+		'hairstyle',
+		'headwear',
+		'lips',
+		'nose',
+		'eyebrows',
+		'pants',
+		'skirt',
+		'shirt',
+		'dress',
+		'boots'
+	];
+
+	console.log(characterAssets.length, 'total number of character assets');
 
 	function init() {
 		
 		//load character assets
-		loadCharacterAsset('body');
-		loadCharacterAsset('face');
-		loadCharacterAsset('eyes');
-		loadCharacterAsset('glasses');
-		loadCharacterAsset('hairstyles');
-		loadCharacterAsset('headwears');
-		loadCharacterAsset('lips');
-		loadCharacterAsset('noses');
-		loadCharacterAsset('shirts');
-		loadCharacterAsset('skirts');
-		loadCharacterAsset('eyebrows');
-		loadCharacterAsset('dresses');
-
+		characterAssets.forEach(( assetType, layerPosition ) => {
+			loadCharacterAsset( assetType, layerPosition ); 
+		});
+		
 		return;
 	}
 	
@@ -38,18 +50,24 @@ const characterComponent = (function CharacterComponent() {
 	 * Load the character asset
 	 *
 	 * @param {String} assetType - assets on character (e.g. body, eyes, etc...)
+	 * @param {Number} layerPosition - layer position of assets to build character (e.g. body, eyes, etc...)
 	 * 
 	 * @return {void}
 	 */
-	function loadCharacterAsset( assetType ) {
+	function loadCharacterAsset( assetType, layerPosition ) {
 		console.log(assetType, 'load asset');
-	
-		characterState[assetType] = new Image();
-		characterState[assetType].src = characterAssetUrl( assetType );
+
+		characterState[assetType] = {};
+
+		characterState[assetType]['position'] = layerPosition;
+
+
+		characterState[assetType]['image'] = new Image();
+		characterState[assetType]['image'].src = characterAssetUrl( assetType );
 
 		var characterImage = new Promise(function(resolve, reject) {
 			setTimeout(function() {
-				resolve( characterState[assetType] );
+				resolve( characterState[assetType]['image'] );
 			}, 1000);
 		});
 
@@ -77,18 +95,22 @@ const characterComponent = (function CharacterComponent() {
 	 * Creates Resource URL for character asset
 	 *
 	 * @param {String} assetType - assets on character (e.g. body, eyes, etc...)
-	 * @param {Number} assetVariation - variant of an asset type (e.g. different structures of eye assets)
+	 * @param {String} assetVariation - variant of an asset type (e.g. different structures of eye assets)
 	 * @param {String} assetColor - difference colors of an asset type
 	 *
 	 * @return {String} Character Asset URL
 	 */
-	function characterAssetUrl(assetType='', assetVariation=1, assetColor='a') {
+	function characterAssetUrl(assetType='', assetVariation='01', assetColor='a') {
+
 		if( assetType === 'body' ) {
 	  		return `${rootDir}/${assetType}/${assetType}_${assetColor}.png`;
 	  	} else{
-	  		return `${rootDir}/${assetType}/0${assetVariation}/${assetType}_0${assetVariation}_${assetColor}.png`;
+	  		return `${rootDir}/${assetType}/${assetVariation}/${assetType}_${assetVariation}_${assetColor}.png`;
 	  	}
 	}
+
+
+	console.log(characterState);
 
 	return { init };
 })();
